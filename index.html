@@ -24,16 +24,20 @@
             <div class="side-bar">
                 <div class="top shrink-none">
                     <ul>
-                        <li><a href="#"></a><img src="img/logo-small.svg" alt="logo piccolo"></li>
-                        <li><a href="#"><i class="fas fa-home"></i></a></li>
-                        <li><a href="#"><i class="fas fa-search"></i></a></li>
-                        <li><a href="#"><i class="fas fa-grip-lines-vertical"></i></a></li> 
+                        <li class="logo-piccolo"><a href="#"></a><img src="img/logo-small.svg" alt="logo piccolo"></li>
+                        <li class="logo-grande"><a href="#"><img src="img/logo.svg" alt=""></a></li>
+                        <li><a href="#"><i class="fas fa-home"></i>
+                            <span class="side_bar-tittle-section">Home</span></a></li>
+                        <li><a href="#"><i class="fas fa-search"></i>
+                        <span class="side_bar-tittle-section">Cerca</span></a></li>
+                        <li><a href="#"><i class="fas fa-grip-lines-vertical"></i>
+                        <span class="side_bar-tittle-section">La tua libreria</span></a></li> 
                     </ul>
                 </div>
                 <div class="middle grow-plus shrink-none"></div>
                 <div class="bottom shrink-none ">
                     <ul>
-                        <li><i id="arrow-small" class="fas fa-arrow-circle-down"></i></li>
+                        <li><i class="arrow-small fas fa-arrow-circle-down"></i></li>
                         <li><i class="far fa-user-circle"></i></li>
                     </ul>
                 </div>
@@ -122,34 +126,40 @@
                 </div>
                 <div class="player-album-name">
                     <h5 class="text-primary">Sinister</h5>
-                    <span class="secondary-text">Brano Nome</span>
+                    <span class="secondary-text">Brano</span>
+                    <span class="secondary-text">Nome</span>
 
                 </div>
                 <div class="player-save-like secondary-text">
-                    <i class="far fa-heart"></i>
-                    <i class="far fa-folder"></i>
+
+                    <span> <i class="far fa-heart"></i></span>
+
+                    <span><i class="far fa-folder"></i></span>
+                   
+                    
                  </div>
 
             </div>
             <div class="nav-bar-center">
                 <div class="footer-player-button text-primary">
-                    <span><i class="fas fa-random"></i></span>
-                    <span><i class="fas fa-caret-left"></i></span>
-                    <span class="play-button"><i class="far fa-play-circle"></i></span>
-                    <span><i class="fas fa-caret-right"></i></span>
-                    <span><i class="fas fa-redo-alt"></i></span>
+                    <span class="player-button"><i class="fas fa-random"></i></span>
+                    <span class="player-button"><i class="fas fa-caret-left"></i></span>
+                    <span class="player-button play-button"><i class="far fa-play-circle"></i></span>
+                    <span class="player-button"><i class="fas fa-caret-right"></i></span>
+                    <span class="player-button"><i class="fas fa-redo-alt"></i></span>
                 </div>
                 <div class="footer-player-progress">
-                    <span class="text-primary">0.25</span>
-                    <div class="player-bar"></div>
-                    <span class="text-primary">4.45</span>
+                    <span class="text-primary font-small">0.25</span>
+                    <div class="progress-bar"></div>
+                    <span class="text-primary font-small">4.45</span>
                 </div>
 
             </div>
             <div class="nav-bar-right secondary-text">
-                <span><i class="fas fa-bars"></i></span>
+                <span><i class="fas fa-list-ul"></i></span>
                 <span><i class="fas fa-desktop"></i></span>
                 <span><i class="fas fa-volume-up"></i></span>
+                <div class="progress-bar volum-bar"></div>
 
             </div>
         </div>
