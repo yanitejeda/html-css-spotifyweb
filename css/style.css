@@ -3,11 +3,13 @@
     padding: 0;
     margin: 0;
     font-family: 'Montserrat', sans-serif;
+
 }
 
-body{
-    min-width: 411px;
+a{
+    text-decoration: none;
 }
+
 
 
 .main-conteiner{
@@ -19,7 +21,6 @@ body{
 .grow-plus{
     flex-grow: 1;
 }
-
 
 .shrink-none{
     flex-shrink: 0;
@@ -61,14 +62,14 @@ span.secondary-text{
 }
 
 
+.logo-grande, .side_bar-tittle-section, .new-playlist, .mobile-none{
+    display: none;
+}
 
 /*side-bar*/
 
 .side-bar img{
     width: 80%;
-}
-.logo-grande, .side_bar-tittle-section{
-    display: none;
 }
 
 .arrow-small{
@@ -86,20 +87,18 @@ span.secondary-text{
     justify-content: space-between;
     background-color: black;
 }
-
 .side-bar .top li, .side-bar .bottom li{
     text-align: center;
     padding: 4px;
 }
-
 .side-bar i{
     color: #878787;
 }
-
-
-
-
-
+.side-bar .top, .creates-playlist{
+    padding: 5px 0;
+}
+.new-playlist{
+    line-height: 30px;}
 
 /*middle-section*/
 .middle-section{
@@ -160,17 +159,12 @@ span.secondary-text{
 }
 
 
-
-
-
-
 /*footer nav bar*/
 .nav-bar{
    height: 80px;
     display: flex;
     background-color: #282828;
-    align-items: center;
-    padding: 5px 10px;
+    padding: 20px 10px;
 }
 
 .player-img img{
@@ -185,7 +179,13 @@ span.secondary-text{
 
 .nav-bar-left > div{
     display: inline-block;
+    font-size: 10px;
 }
+
+.nav-bar-left .secondary-text{
+    font-size: 8px;
+}
+
 
 .progress-bar{
     display: inline-block;
@@ -199,20 +199,19 @@ span.secondary-text{
     flex-grow: 1;
     text-align: center;
 }
+.nav-bar-left{
+    display: flex;
+    justify-content: space-between;
+}
 
 .player-button{
     padding: 0 10px;
 }
 
 .volum-bar{
-    position: absolute;
-    top: 50%;
     transform: translateY(-50%);
 }
 
-.nav-bar-right{
-    position: relative;
-}
 
 .nav-bar-right > span{
     padding: 0 5px;
@@ -240,7 +239,7 @@ span.secondary-text{
     .side-bar .bottom li:nth-child(1){
     border-bottom: 1px solid grey;
     }
-    .logo-grande, .side_bar-tittle-section{
+    .logo-grande, .side_bar-tittle-section, .new-playlist, .mobile-none{
         display: inline-block;
     }
     .logo-piccolo{
