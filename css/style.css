@@ -46,6 +46,20 @@ a{
     padding: 10px 15px;
     font-size: small;
     line-height: 40px;
+    position: relative;
+}
+
+
+.page:hover:before {
+    content: "";
+    position: absolute;
+    height: 5px;
+    bottom: 0;
+    background-color: #ADFF2F;
+    width: 90px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 10px;
 }
 
 .section{
@@ -109,7 +123,7 @@ span.secondary-text{
 .new-playlist{
     line-height: 30px;}
 
-/*middle-section*/
+/*/////////////middle-section/////////////*/
 .middle-section{
     width: 100%;
     height: 100%;
@@ -167,6 +181,11 @@ span.secondary-text{
     object-fit: cover;
 }
 
+.authors{
+    border-radius: 50%;
+    overflow: hidden;
+}
+
 
 /*footer nav bar*/
 .nav-bar{
@@ -174,6 +193,7 @@ span.secondary-text{
     display: flex;
     background-color: #282828;
     padding: 20px 10px;
+    overflow: auto;
 }
 
 .player-img img{
@@ -191,6 +211,10 @@ span.secondary-text{
     font-size: 10px;
 }
 
+.player-album-name{
+    padding: 0 15px;
+}
+
 .nav-bar-left .secondary-text{
     font-size: 8px;
 }
@@ -202,11 +226,32 @@ span.secondary-text{
     background-color: #5a5a5a;
     width: 50%;
     border-radius: 10px;
+    position: relative;
 }
+
+
+.progress-bar::before {
+    content: "";
+    position: absolute;
+    height: 5px;
+    left: 0;
+    background-color: #ffffff;
+    width: 30%;
+    border-radius: 10px;
+}
+
+.progress-bar:hover:before {
+    content: "";
+    position: absolute;
+    background-color: #ADFF2F;
+  
+}
+
 
 .nav-bar-center{
     flex-grow: 1;
     text-align: center;
+    flex-shrink: 0;
 }
 .nav-bar-left{
     display: flex;
@@ -227,11 +272,11 @@ span.secondary-text{
 }
 
 .nav-bar-left, .nav-bar-right{
-    width: 25%;
+    flex-shrink: 0;
 }
 
 .progress-bar.volum-bar{
-    width: 20%;
+    width: 50px;
 }
 
 @media screen and (min-width:768px){
@@ -258,6 +303,10 @@ span.secondary-text{
         display: none;
     }
 
+    .progress-bar.volum-bar{
+        width: 90px;
+    }
+
 }
 
 @media screen and (min-width:1024px){
@@ -271,5 +320,11 @@ span.secondary-text{
     .card{
         width: calc(100% / 6 - 8px);
     }
-   
+
+
+    /*footer*/
+.player-save-like > div{
+    padding: 0 10px;
+    display: inline-block;
+}   
 }
